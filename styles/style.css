@@ -1,0 +1,399 @@
+body {
+  margin: 0 auto;
+  background-color: #FFC3A1;
+  font-family: 'Circe-Regular';
+}
+
+input,
+textarea {
+  height: 50px;
+  background: #ffffff;
+  border-radius: 20px;
+  margin: 20px 0;
+  font-size: 1.25em;
+}
+
+label,
+input {
+  display: block;
+  text-align: center;
+}
+
+.add {
+  font-size: 1.3em;
+  padding: 20px;
+  background-color: #FAD957;
+  border-radius: 20px;
+}
+
+.add-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.add-wrap button{
+  padding: 0 10px;
+  font-size: 1.25em;
+}
+
+.remove-button {
+  display: inline-block;
+}
+
+.container {
+  max-width: 1210px;
+  padding: 0 15px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.mb {
+  margin-bottom: 120px;
+}
+
+.heading {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.main__heading {
+  text-align: center;
+  font-family: 'Circe-Bold';
+  font-size: 1.875em;
+}
+
+.button {
+  font-family: 'Circe-Bold';
+  color: #ffffff;
+  font-size: 1.5em;
+  background-color: #F07051;
+  padding: 10px 38px;
+  max-width: 300px;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  transition: 0.5s;
+}
+
+.button:hover {
+  color: #F07051;
+  border: 2px solid currentColor;
+  background-color: #ffffff;
+
+}
+
+.button:active {
+  transform: scale(0.93);
+  transition: 0.1s;
+}
+
+/* .checkbox__wrap{
+  position: relative;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.checkbox{
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+.checkbox:checked + .checkbox__custom{
+  background: #fff;
+}
+
+.checkbox__custom{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+} */
+
+/*=====================================APPLICATION=====================================*/
+/*=====================================APPLICATION=====================================*/
+
+.application__heading {
+  font-size: 2.75em;
+  font-family: 'Circe-Bold';
+  text-align: center;
+  margin-top: 120px;
+}
+
+.application__customer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.application__customer label {
+  font-size: 1.5em;
+}
+
+.application__customer input {
+  width: 400px;
+}
+
+.application__materials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 60px;
+  margin-bottom: 80px;
+}
+
+.application__block-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.application__block-wrapper>div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0 30px;
+  width: 480px
+}
+
+.dropdown {
+  height: 50px;
+  font-size: 1.25em;
+  text-align: center;
+  border-radius: 20px;
+  margin: 20px 0;
+}
+
+.form__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.application__buttons{
+  display: flex;
+  flex-direction: column;
+}
+
+/*=====================================SERVICES=====================================*/
+/*=====================================SERVICES=====================================*/
+
+.services__checkboxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.services__heading {
+  text-align: start;
+  margin-bottom: 70px;
+}
+
+.services__checkbox {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  font-size: 1.5em;
+}
+
+/*=====================================DETAILS=====================================*/
+/*=====================================DETAILS=====================================*/
+
+.details__inner {
+  padding-bottom: 100px;
+}
+
+.details__materials-heading {
+  margin-bottom: 70px;
+}
+
+.details__materials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.details__materials-select,
+.details__num input {
+  width: 300px;
+}
+
+.details__size,
+.edging__variants {
+  display: flex;
+  gap: 30px;
+}
+
+.details__size input,
+.edging__variant {
+  width: 200px;
+}
+
+.details__materials-note textarea {
+  width: 700px;
+  height: 100px;
+  padding: 10px 20px;
+  resize: none;
+  margin-bottom: 70px;
+}
+
+.details__buttons{
+  display: flex;
+  flex-direction: column;
+}
+
+
+/*=====================================FILE=====================================*/
+/*=====================================FILE=====================================*/
+
+.file__add-heading {
+  font-family: 'Circe-Bold';
+  text-align: start;
+  margin-bottom: 50px;
+}
+
+.file__adding {
+  position: relative;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.field__file {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+.field__file-wrapper {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.field__file-fake {
+  height: 60px;
+  width: calc(100% - 130px);
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  background-color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 20px 0 0 20px;
+  border-right: none;
+  font-size: 1.25em;
+}
+
+.field__file-button {
+  width: 130px;
+  height: 60px;
+  background: #F07051;
+  color: #fff;
+  font-family: 'Circe-Bold';
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+}
+
+
+/*=====================================SEND=====================================*/
+/*=====================================SEND=====================================*/
+
+
+.send__application {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  user-select: none;
+}
+
+.checkbox__wrap label {
+  text-align: left;
+  max-width: 350px;
+}
+
+.checkbox__wrap {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox__wrap a{
+  text-decoration: underline;
+}
+
+.phone__call {
+  max-width: 900px;
+  font-size: 1.6em;
+  line-height: 1.3;
+  text-align: center;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+/*=====================================MODAL=====================================*/
+/*=====================================MODAL=====================================*/
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+  overflow: auto;
+  background-color: #FAAF57;
+  border-radius: 20px;
+}
+
+.modal-content {
+  text-align: center;
+  font-size: 1.875em;
+  margin-top: 170px;
+}
+
+.close {
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  border-color: transparent;
+  font-size: 1.25em;
+}
+
+@media (max-width: 700px) {
+  html{font-size: 12px;}
+  textarea{max-width: 320px;}
+  .application__customer input{max-width: 300px;}
+  .details__size, .edging__variants{display: flex; flex-direction: column;}
+  .field__file-wrapper{max-width: 300px;}
+  .add-wrap button{
+    padding: 0 10px;
+    font-size: 1.5em;
+    flex: 2;
+  }
+}

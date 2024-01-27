@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/reset.css">
+  <link rel="stylesheet" href="/styles/fonts.css">
+  <link rel="stylesheet" href="/styles/style.css">
+  <title>Заявка на изготовление деталей для мебели</title>
+  <script src="scripts/script.js" defer></script>
+</head>
+
+<body>
+  <section class="application">
+    <div class="container">
+      <h1 class="application__heading mb">Заявка на изготовление деталей для мебели</h1>
+      <div class="application__inner">
+        <form class="application__customer mb" id="material">
+          <label for="name">Фамилия и имя
+            <input type="text" name="name">
+          </label>
+          <label for="tel">Телефон
+            <input class="phone__mask" type="tel" name="tel">
+          </label>
+          <label for="name">Ваш email
+            <input type="email" name="email">
+          </label>
+        </form>
+        <form class="application__materials">
+          <h2 class="application__materials-heading main__heading">Материал</h2>
+          <div class="application__block-wrapper">
+            <div class="application__materials-type">
+            <h3 class="select__heading heading">Тип</h3>
+            <select class="application__materials-select dropdown" name="typeMaterial" id="typeMaterial">
+              <option value="Выберите тип материала">Выберите тип материала</option>
+              <option value="ЛДСП">ЛДСП</option>
+              <option value="МДФ">МДФ</option>
+              <option value="ХДФ">ХДФ</option>
+              <option value="ДВП">ДВП</option>
+              <option value="Столешница">Столешница</option>
+              <option value="Стеновая панель">Стеновая панель</option>
+            </select>
+          </div>
+          <div class="application__materials-color">
+            <h3 class="select__heading heading">Цвет материала</h3>
+            <input class="dropdown" type="text" name="colorMaterial" placeholder="Напишите желаемый цвет материала">
+          </div>
+        </div>
+        <div class="application__block-wrapper">
+          <div class="application__materials-thickness">
+            <h3 class="select__heading heading">Толщина</h3>
+            <select class="application__materials-select dropdown" name="thicknessMaterial" id="thicknessMaterial">
+              <option value="Выберите тип материала">Укажите толщину материала</option>
+              <option value="3,2 мм">3,2 мм</option>
+              <option value="4 мм">4 мм</option>
+              <option value="8 мм">8 мм</option>
+              <option value="10мм">10мм</option>
+              <option value="16мм">16мм</option>
+              <option value="19мм">19мм</option>
+              <option value="22мм">22мм</option>
+              <option value="25мм">25мм</option>
+              <option value="26мм">26мм</option>
+              <option value="38мм">38мм</option>
+            </select>
+          </div>
+          <div class="application__edging-color">
+            <h3 class="select__heading heading">Цвет кромки</h3>
+            <input class="dropdown" type="text" name="colorEdging" placeholder="Напишите желаемый цвет кромки">
+          </div>
+        </div>
+          <div class="application__buttons form__buttons mb" id="material">
+            <button class="application__add-button button" type="submit" id="material-add">Добавить материал</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="services mb">
+    <div class="container">
+      <div class="services__inner">
+        <fieldset class="services__checkboxes">
+          <legend class="services__heading main__heading">Выберите необходимые услуги:</legend>
+          <div class="services__checkbox">
+            <input type="checkbox" id="payment" name="payment">
+            <label for="payment">Оплата Юр. лицом</label>
+          </div>
+          <div class="services__checkbox">
+            <input type="checkbox" id="packaging" name="packaging">
+            <label for="packaging">Упаковка в стрейч</label>
+          </div>
+          <div class="services__checkbox">
+            <input type="checkbox" id="additive" name="additive">
+            <label for="additive">Присадка отверстий</label>
+          </div>
+          <div class="services__checkbox">
+            <input type="checkbox" id="delivery" name="delivery">
+            <label for="delivery">Погрузка и доставка</label>
+          </div>
+          <div class="services__checkbox">
+            <input type="checkbox" id="assembling" name="assembling">
+            <label for="assembling">Сборка</label>
+          </div>
+          <div class="services__checkbox">
+            <input type="checkbox" id="lift" name="lift">
+            <label for="lift">Подъем на этаж</label>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+  </section>
+
+  <section class="details mb">
+    <div class="container">
+      <form class="details__adding">
+        <h2 class="details__materials-heading main__heading">Детали</h2>
+        <div class="details__materials">
+          <div class="details__materials-type">
+            <h3 class="heading">Материал</h3>
+            <select class="details__materials-select dropdown" name="detailsMaterial">
+              <option value="Выберите материал">Выберите материал</option>
+              <option value="Мат1">Мат1</option>
+              <option value="Мат2">Мат2</option>
+              <option value="Мат3">Мат3</option>
+              <option value="Мат4">Мат4</option>
+            </select>
+          </div>
+          <div class="details__num">
+            <h3 class="heading">Количество деталей</h3>
+            <input type="number" name="numberOfDetails" placeholder="Введите количество">
+          </div>
+          <div class="details__materials-rotation">
+            <h3 class="heading">Вращение</h3>
+            <select class="details__materials-select dropdown" name="rotationOfDetail" id="rotation">
+              <option value="">Укажите наличие вращения</option>
+              <option value="да">да</option>
+              <option value="совм">совм</option>
+              <option value="нет">нет</option>
+            </select>
+          </div>
+          <div class="details__size">
+            <div class="a__size">
+              <h3 class="heading">Размер детали A</h3>
+              <input type="number" name="sizeOfDetailA" placeholder="Введите размер(мм)">
+            </div>
+            <div class="b__size">
+              <h3 class="heading">Размер детали B</h3>
+              <input type="number" name="sizeOfDetailB" placeholder="Введите размер(мм)">
+            </div>
+          </div>
+          <div class="details__materials-edging">
+            <h3 class="heading" style="cursor: pointer;" title="A - вдоль длинной стороны листа по направлению текстуры, B - поперёк.
+        A, B или AA, BB - обработка кромкой АБС 2мм по одной или двум сторонам, соответственно.
+        a, b или aa, bb - обработка кромкой АБС 0,4мм по одной или двум сторонам.">Кромкование &#9432;</h3>
+            <div class="edging__variants">
+              <select class="edging__variant dropdown" name="edgingOfDetailA" id="edgingA">
+                <option value="">Материал A</option>
+                <option value="a">a</option>
+                <option value="aa">aa</option>
+                <option value="A">A</option>
+                <option value="Aa">Aa</option>
+                <option value="AA">AA</option>
+              </select>
+              <select class="edging__variant dropdown" name="edgingOfDetailB" id="edgingB">
+                <option value="">Материал B</option>
+                <option value="b">b</option>
+                <option value="bb">bb</option>
+                <option value="B">B</option>
+                <option value="Bb">Bb</option>
+                <option value="BB">BB</option>
+              </select>
+            </div>
+
+          </div>
+          <div class="details__materials-note">
+            <h3 class="heading" style="cursor: pointer;"
+              title="Можно указать тип материала, углы, радиусы, пропили и прочее.">Примечание &#9432;</h3>
+            <textarea name="noteOfDetails" placeholder="Укажите дополнительные пожелания"></textarea>
+          </div>
+        </div>
+        <div class="details__buttons form__buttons" id="details">
+          <button class="details__add-button button" id="details-add">Добавить детали</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="file__add mb">
+    <div class="container">
+      <h3 class="file__add-heading heading">Прикрепите файл</h3>
+      <div class="file__adding">
+        <input name="file" type="file" id="field__file-2" class="field field__file" multiple>
+        <label class="field__file-wrapper" for="field__file-2">
+          <div class="field__file-fake">Файл не выбран</div>
+          <div class="field__file-button">Выбрать</div>
+        </label>
+      </div>
+    </div>
+  </section>
+
+  <section class="send">
+    <div class="container">
+      <div class="send__application">
+        <button class="send__application-button button">Отправить заявку</button>
+        <div class="checkbox__wrap">
+          <input class="checkbox" type="checkbox" id="agree" name="agree">
+          <label for="agree">Отправляя данную заявку, Вы соглашаетесь на обработку <a target="_blank"
+              href="https://www.garant.ru/actual/persona/#:~:text=%D0%9F%D0%BE%D0%B4%20%D0%BF%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%BC%D0%B8%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%BC%D0%B8%20%D0%BF%D0%BE%D0%BD%D0%B8%D0%BC%D0%B0%D0%B5%D1%82%D1%81%D1%8F%20%D0%BB%D1%8E%D0%B1%D0%B0%D1%8F,%D0%97%D0%B0%D0%BA%D0%BE%D0%BD%20%E2%84%96%20152%2D%D0%A4%D0%97).">персональных
+              данных</a> в соответствии с <a target="_blank"
+              href="https://ru.wikipedia.org/wiki/%D0%9F%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%BE%D0%B5_%D1%81%D0%BE%D0%B3%D0%BB%D0%B0%D1%88%D0%B5%D0%BD%D0%B8%D0%B5">пользовательским
+              соглашением</a> и <a target="_blank"
+              href="https://www.unisender.com/ru/blog/sovety/politika-konfidencialnosti-na-sajte-dlya-chego-nuzhna-i-kak-sdelat/#:~:text=%D0%9F%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0%20%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B4%D0%B5%D0%BD%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B8%20%E2%80%94%20%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%2C%20%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B9%20%D0%BE%D0%B1%D1%8F%D0%B7%D0%B0%D0%BD%D1%8B,%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C%20%D1%88%D1%82%D1%80%D0%B0%D1%84%20%D0%B8%D0%BB%D0%B8%20%D0%B4%D0%B0%D0%B6%D0%B5%20%D0%B1%D0%BB%D0%BE%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D1%83.">политикой
+              конфиденциальности</a></label>
+        </div>
+
+      </div>
+      <p class="phone__call">Не смогли разобраться с материалами или деталями? Позвоните нашему сотруднику для получения
+        консультации!<br> +7 (999)-999-99 99</p>
+    </div>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <button class="close">X</button>
+        <p>Заявка успешно отправлена!</p>
+      </div>
+  </section>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="scripts/phone-mask.js"></script>
+</body>
+
+</html>
